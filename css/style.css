@@ -1,0 +1,265 @@
+body {
+    background: #fff;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    height: 120px;
+}
+.header {
+    height: 120px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: #4c5c69;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+}
+.container {
+    margin: 0 auto;
+    max-width: 978px;
+}
+.logo {
+    margin-top: 20px;
+    float: left;
+}
+nav {
+    margin-top: 45px;
+    float: right;
+}
+.menu {
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+.menu li {
+    float: left;
+    display: block;
+    margin-left: 40px;
+}
+.menu li a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+.menu li a:hover {
+    border-bottom: 2px solid #2f3942;
+}
+.projects {
+    background: #fff;
+    color: #000;
+}
+.title {
+    display: flex;
+}
+.title i {
+    margin-top: 18px;
+    margin-right: 5px;
+    color: #297e39;
+    font-size: 20px;
+}
+
+.title h6 {
+    color: #4c5b66;
+    font-size: 20px;
+    color: #4c5b66;
+    font-size: 20px;
+    padding-top: 15px;
+}
+.photo {
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: auto;
+    align-content: flex-start;
+}
+.photo a {
+    flex: 31 3 auto;
+    margin: 5px;
+    border: 1px solid #f2f2f2;
+    padding: 3px;
+    height: 140px;
+    box-shadow: 1px 2px 2px 1px #e8e8e8;
+}
+.photo a img {
+    width: -webkit-fill-available;
+    height: -webkit-fill-available;
+}
+.separator {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 1px;
+    width: 100%;
+    background: #e8e8e8;
+}
+.content {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: flex-start;
+    font-size: 13px;
+    color: #888;
+}
+
+.block_1 {
+    padding: 5px;
+    float: left;
+    max-width: 460px;
+}
+.block_1 h4 {
+    font-size: 15px;
+    color: #5c5c5c;
+}
+.from_blog {
+    display: flex;
+}
+.from_blog i {
+    color: #e29f49;
+    font-size: 20px;
+    padding-right: 5px;
+}
+.from_blog h6 {
+    color: #4c5b66;
+    font-size: 20px;
+}
+.first {
+    display: flex;
+}
+
+.first img {
+    margin: 5px;
+    border: 1px solid #f2f2f2;
+    padding: 3px;
+    box-shadow: 1px 2px 2px 1px #e8e8e8;
+}
+.text {
+    padding-left: 15px;
+}
+.text a1 {
+	font-size: 11px;
+	color: #b0b0b0;
+}
+.second {
+    display: flex;
+}
+.second img {
+    margin: 5px;
+    border: 1px solid #f2f2f2;
+    padding: 3px;
+    box-shadow: 1px 2px 2px 1px #e8e8e8;
+}
+.remark {
+    padding-top: 10px;
+}
+.block_2 {
+    padding: 5px;
+    max-width: 460px;
+}
+.twitter_feed {
+    display: flex;
+}
+.twitter_feed i {
+    color: #386bb1;
+    font-size: 20px;
+    padding-right: 5px;
+}
+.twitter_feed h6 {
+    color: #4c5b66;
+    font-size: 20px;
+}
+.paragraph_1 p {
+    padding-bottom: 5px;
+}
+
+.paragraph_1 a1 {
+font-size: 11px;
+	color: #b0b0b0;
+}
+.footer {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: flex-start;
+}
+.a_level {
+    padding: 5px;
+    float: left;
+    display: flex;
+    font-size: 13px;
+    color: #8a8a8a;
+    order: 1;
+}
+.a_level i {
+    padding-top: 3px;
+}
+.contact {
+    padding: 5px;
+    font-size: 28px;
+    order: 2;
+}
+@media (max-width: 505px) {
+    .contact {
+        order: -1;
+        width: 100%;
+        text-align: center;
+    }
+    .photo a {
+        height: unset;
+    }
+    .photo a img {
+        height: initial;
+    }
+    .a_level {
+        width: 100%;
+        text-align: -webkit-center;
+        display: flow-root;
+    }
+    .a_level p {
+        display: inline-table;
+    }
+    .header {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .menu {
+        display: none;
+    }
+}
+.toggle-button {
+    text-align: center;
+    display: none;
+    cursor: pointer;
+    color: #000;
+}
+.toggle-button:after {
+    content: attr(data-open);
+    display: block;
+}
+#menu-checkbox:checked+nav[role="navigation"] .menu {
+    display: block;
+}
+#menu-checkbox:checked+nav[role="navigation"] .toggle-button:after {
+    content: attr(data-close)
+}
+#menu-checkbox {
+    display: none;
+}
+.menu {
+    position: relative;
+}
+@media (max-width: 505px) {
+    .toggle-button {
+        display: block;
+    }
+}
